@@ -97,8 +97,8 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""
 	results = []
 	for i in sizes:
-		lineartime = time_search(linear_search, i, -1)
-		binarytime = time_search(linear_search, i, -1)
+		lineartime = time_search(linear_search, sizes, -1)
+		binarytime = time_search(linear_search, sizes, -1)
 		results += (i, lineartime, binarytime)
 	return(results)
 

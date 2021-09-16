@@ -53,6 +53,7 @@ The best case value for linear search is the first value in the list. The best b
 
 - [x] 8. Call `print_results(compare_search())` and paste the results here:
 
+
  |n|Linear Time|Binary Time|
  |10|0.002384185791015625|0.0030994415283203125|
  |100|0.0073909759521484375|0.0035762786865234375|

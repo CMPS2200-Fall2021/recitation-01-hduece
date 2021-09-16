@@ -77,7 +77,7 @@ def time_search(search_fn, mylist, key):
 	start = time.time()
 	search_fn(mylist, key)
 	end = time.time()
-	return((end - start)*1000)
+	return(int((end - start)*1000))
 
 def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""

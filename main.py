@@ -99,7 +99,8 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 		rangeList = list(range(i))
 		lineartime = time_search(linear_search, rangeList, -1)
 		binarytime = time_search(binary_search, rangeList, -1)
-		results+= (i, lineartime, binarytime) 
+		conclusion = (i,lineartime,binarytime)
+		results.append(conclusion) 
 	return(results)
 
 def print_results(results):

@@ -54,7 +54,6 @@ def test_binary_search():
 	### TODO: add two more tests here.
 	assert binary_search([],3) == -1
 	assert binary_search([8,2,6,3,1],3) == 3
-	pass
 
 
 def time_search(search_fn, mylist, key):

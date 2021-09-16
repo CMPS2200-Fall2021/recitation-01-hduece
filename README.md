@@ -52,8 +52,11 @@ The best case value for linear search is the first value in the list. The best b
 - [ ] 7. Complete the `compare_search` function to compare the running times of linear search and binary search. Confirm the implementation by running `pytest main.py::test_compare_search`, which contains some simple checks.
 
 - [ ] 8. Call `print_results(compare_search())` and paste the results here:
-
-**TODO: add your timing results here**
+|n|
+|10|0.002384185791015625|0.0030994415283203125|
+|100|0.0073909759521484375|0.0035762786865234375|
+|1000|0.07033348083496094|0.008106231689453125|
+|10000|0.6985664367675781|0.0073909759521484375|
 
 - [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 

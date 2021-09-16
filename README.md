@@ -1,6 +1,6 @@
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**Hailey Dusablon 
+**Name (Team Member 1):** Hailey Dusablon 
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
 
@@ -33,25 +33,26 @@ You'll work with a partner to complete this recitation. You will be able to code
 
 We'll compare the running times of `linear_search` and `binary_search` empirically.
 
-- [ ] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`. 
+- [x] 1. In `main.py`, the implementation of `linear_search` is already complete. Your task is to implement `binary_search`. Implement a recursive solution using the helper function `_binary_search`. 
 
-- [ ] 2. Test that your function is correct by calling from the command-line `pytest main.py::test_binary_search`
+- [x] 2. Test that your function is correct by calling from the command-line `pytest main.py::test_binary_search`
 
-- [ ] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
+- [x] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
 
-- [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
+- [x] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
 
 The worst case for both of these functions is a value that is not present in their data set.
 
-- [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
+- [x] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
 
 The best case value for linear search is the first value in the list. The best base value for binary search is the root of the tree.
 
-- [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
+- [x] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
 
-- [ ] 7. Complete the `compare_search` function to compare the running times of linear search and binary search. Confirm the implementation by running `pytest main.py::test_compare_search`, which contains some simple checks.
+- [x] 7. Complete the `compare_search` function to compare the running times of linear search and binary search. Confirm the implementation by running `pytest main.py::test_compare_search`, which contains some simple checks.
 
-- [ ] 8. Call `print_results(compare_search())` and paste the results here:
+- [x] 8. Call `print_results(compare_search())` and paste the results here:
+
  |n|Linear Time|Binary Time|
  |10|0.002384185791015625|0.0030994415283203125|
  |100|0.0073909759521484375|0.0035762786865234375|

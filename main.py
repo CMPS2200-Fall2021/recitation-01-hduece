@@ -77,7 +77,7 @@ def time_search(search_fn, mylist, key):
 	start = time.time()
 	search_fn(mylist, key)
 	end = time.time()
-	return(end - start)
+	return((end - start)*1000)
 
 def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""
@@ -96,7 +96,7 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	"""
 	results = []
 	for i in sizes:
-		rangeList = range(i)
+		rangeList = list(range(i))
 		lineartime = time_search(linear_search, rangeList, -1)
 		binarytime = time_search(linear_search, rangeList, -1)
 		results += (i, lineartime, binarytime)
